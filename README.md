@@ -57,7 +57,7 @@ local function setupUI()
         bannerFrame = Instance.new("Frame")
         bannerFrame.Size = UDim2.new(1, 0, 0, 42)
         bannerFrame.Position = UDim2.new(0, 0, 0, 0)
-        bannerFrame.BackgroundColor3 = Color3.fromRGB(10, 18, 38)
+        bannerFrame.BackgroundColor3 = Color3.fromRGB(256, 100, 38)
         bannerFrame.BackgroundTransparency = 0.05
         bannerFrame.BorderSizePixel = 0
         bannerFrame.Parent = container
