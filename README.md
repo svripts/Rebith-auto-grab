@@ -32,7 +32,7 @@ local function updateTopBar()
             local dataPing = network.ServerStatsItem:FindFirstChild("Data Ping")
             if dataPing then ping = math.floor(dataPing:GetValue()) end
         end
-        infoLabel.Text = "404 AUTO GRAB  |  Ping: " .. ping .. "ms  |  FPS: " .. fps
+        infoLabel.Text = "REBITH AUTO GRAB  |  Ping: " .. ping .. "ms  |  FPS: " .. fps
     end)
 end
 
@@ -119,7 +119,7 @@ local function setupUI()
 
         progressFill = Instance.new("Frame")
         progressFill.Size = UDim2.new(0, 0, 1, 0)
-        progressFill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        progressFill.BackgroundColor3 = Color3.fromRGB(200, 220, 230)
         progressFill.BorderSizePixel = 0
         progressFill.Parent = progressBarBg
         Instance.new("UICorner", progressFill).CornerRadius = UDim.new(0, 10)
@@ -127,7 +127,7 @@ local function setupUI()
         local fillGrad = Instance.new("UIGradient", progressFill)
         fillGrad.Color = ColorSequence.new({
             ColorSequenceKeypoint.new(0, Color3.fromRGB(80, 200, 255)),
-            ColorSequenceKeypoint.new(1, Color3.fromRGB(40, 130, 230)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(90, 130, 230)),
         })
 
         percentLabel = Instance.new("TextLabel")
